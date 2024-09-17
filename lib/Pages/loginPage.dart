@@ -55,10 +55,9 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
+                  
                   DatabaseOperationsFirebase().signInWithEmailAndPassword(
                       context, _emailController.text, _passwordController.text);
-                      Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => HomePage()));
                 },
                 child: Text('Entrar'),
                 style: ElevatedButton.styleFrom(
