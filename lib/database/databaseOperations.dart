@@ -99,7 +99,7 @@ class DatabaseOperationsFirebase {
       final credential = await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: senha);
           Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => HomePage()));
+                    MaterialPageRoute(builder: (context) => AddressSearchScreen()));
     } on FirebaseAuthException catch (e) {
       print('O código é: ');
       print(e.code);

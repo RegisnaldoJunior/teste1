@@ -15,7 +15,7 @@ class AppRoutes{
 
  Map<String, WidgetBuilder> define(){
    return {
-     homePage: (BuildContext context) => HomePage(),
+     homePage: (BuildContext context) => AddressSearchScreen(),
      //registerPersonPage: (BuildContext context) => RegisterPersonPage(),
      //listPersonPage: (BuildContext context) => ListPersonPage(),
      //websitePage: (BuildContext context) => WebsitePage(),
