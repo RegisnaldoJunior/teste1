@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:teste1/AppRoutes.dart';
 import 'package:teste1/Pages/homePage.dart';
+import 'package:teste1/Pages/loginPage.dart';
 
 class DatabaseOperationsFirebase {
   final db = FirebaseFirestore.instance;
@@ -69,7 +70,8 @@ class DatabaseOperationsFirebase {
       if (credential != null) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text('Conta Criada com Sucesso!')));
-        Navigator.pushReplacementNamed(context, AppRoutes.homePage);
+        Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => LoginPage()));
       }
     } on FirebaseAuthException catch (e) {
       print('O código é: ');

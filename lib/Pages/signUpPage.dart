@@ -53,19 +53,21 @@ class _SignUpPageState extends State<SignUpPage> {
               SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
+                  
                   DatabaseOperationsFirebase().createNewUserFirebase(
                       context, _emailController.text, _passwordController.text);
-                      //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginPage()));
                 },
-                child: Text('Criar Conta'),
+                child: Text('Cadastrar'),
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
                   backgroundColor: Colors.black,
                   minimumSize: Size(double.infinity, 50),
                 ),
+              
               ),
             ],
           ),
-        ));
+        )
+        );
   }
 }
