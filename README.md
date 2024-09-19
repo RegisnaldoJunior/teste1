@@ -10,9 +10,9 @@ Aqui será um código por vez:
 
 Depois disso, crie o repositório no GitHub, e copie os códigos e coloque todos de uma vez no terminal:
   Exemplo tenod como se fosse "nome-do-projeto"
-    git remote add origin https://github.com/RegisnaldoJunior/nome-do-projeto.git
-    git branch -M main
-    git push -u origin main
+    1) git remote add origin https://github.com/RegisnaldoJunior/nome-do-projeto.git
+    2) git branch -M main
+    3) git push -u origin main
 
 ## Getting Started
 
